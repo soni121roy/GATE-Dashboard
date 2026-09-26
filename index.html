@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GATE CS Dashboard - SONI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>GATE 2027 <span>Dashboard</span></h1>
+    <p>B.Tech CSE | Target PSU - SONI</p>
+  </header>
+
+  <div class="grid">
+    <div class="card timer-card">
+      <h3>Focus Timer</h3>
+      <div id="timer">25:00</div>
+      <div class="btns">
+        <button class="primary" onclick="startTimer()">Start</button>
+        <button class="secondary" onclick="pauseTimer()">Pause</button>
+        <button class="secondary" onclick="resetTimer()">Reset</button>
+      </div>
+      <p id="quote">Consistency > Intensity</p>
+    </div>
+
+    <div class="card">
+      <h3>Today's Target</h3>
+      <div class="input-box">
+        <input id="taskInput" placeholder="e.g. DBMS - Normalization">
+        <button class="primary" onclick="addTask()">+</button>
+      </div>
+      <ul id="taskList"></ul>
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+      <small id="progressText">0 / 0 Done</small>
+    </div>
+
+    <div class="card">
+      <h3>Subject Progress</h3>
+      <div class="subject"><span>DBMS</span><div class="bar"><div style="width:70%"></div></div></div>
+      <div class="subject"><span>OS</span><div class="bar"><div style="width:40%"></div></div></div>
+      <div class="subject"><span>CN</span><div class="bar"><div style="width:20%"></div></div></div>
+      <div class="subject"><span>Aptitude</span><div class="bar"><div style="width:85%"></div></div></div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
